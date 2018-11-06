@@ -14,7 +14,7 @@ public class Main {
         if (conn != null)
             return conn;
         try{
-            conn = DriverManager.getConnection("jdbc:sqlite:/CSE111/ScoreBoard/src/statistics.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:statistics.db");
             System.out.println("Establishing connection ");
         }
         catch(SQLException ex) {
