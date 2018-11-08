@@ -1,13 +1,30 @@
 package com.company;
 
 import java.sql.*;
+import java.util.Scanner;
 
 public class Main {
 
     static Connection conn = null;
 
     public static void main(String[] args) {
-	// write your code here
+
+        String function;
+        System.out.println("User Input: ");
+
+        Scanner input = new Scanner(System.in);
+        function = input.next();
+
+        switch(function) {
+            case "1":
+                break;
+            case "2":
+                break;
+
+
+                
+        }
+
     }
 
     public static Connection connect() {
