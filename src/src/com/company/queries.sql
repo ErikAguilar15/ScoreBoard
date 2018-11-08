@@ -44,20 +44,6 @@ CREATE TABLE Football (
 );
 
 CREATE TABLE FPlayerStats (
-<<<<<<< HEAD
-    pl_name           CHAR (50)     NOT NULL,
-    pl_passyards      INTEGER (5),
-    pl_rushyards      INTEGER (5),
-    pl_receptions     INTEGER (5),
-    pl_ointerceptions INTEGER (5),
-    pl_touchdowns     INTEGER (5),
-    pl_receivingyards INTEGER (5),
-    pl_fumbles        INTEGER (5),
-    pl_dinterceptions INTEGER (5),
-    pl_sacks          INTEGER (5),
-    pl_tackles        INTEGER (5),
-    pl_forcefumbles   INTEGER (5)
-=======
     pl_playerID       VARCHAR (255) NOT NULL,
     pl_passyards      INTEGER (5),
     pl_rushyards      INTEGER (5),
@@ -70,7 +56,6 @@ CREATE TABLE FPlayerStats (
     pl_sacks          INTEGER (5),
     pl_tackles        INTEGER (5),
     pl_forcefumbles   INTEGER (5)
->>>>>>> d83f47463cd4eb631ed458c41299f37812c8dd10
 );
 
 CREATE TABLE Player (
@@ -355,4 +340,4 @@ INSERT INTO FPlayerStats (pl_playerID, pl_passyards, pl_rushyards, pl_receptions
 (49),
 (50),
 
-INSERT INTO BPlayerStats (bp_name, bp_playerID, bp_position, bp_rebounds, bp_assists, bp_steals, bp_blocks, bp_turnovers) VALUES
+INSERT INTO BPlayerStats (bp_playerID, bp_position, bp_rebounds, bp_assists, bp_steals, bp_blocks, bp_turnovers) VALUES
