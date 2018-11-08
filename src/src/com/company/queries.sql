@@ -280,6 +280,16 @@ INSERT INTO Football (f_teamID, f_passyards, f_rushyards, f_tackles, f_reception
 (10, 204, 200, 54, 20, 15, 1, 5, 3, 204, 1, 2),
 
 INSERT INTO Basketball (b_teamID, b_points, b_rebounds, b_assists, b_steals, b_blocks, b_turnovers) VALUES
+(11, 90, 30, 20, 5, 5, 15),
+(12, 102, 28, 22, 3, 2, 16),
+(13, 94, 31, 21, 2, 3, 19),
+(14, 93, 34, 17, 6, 6, 20),
+(15, 100, 36, 24, 9, 9, 11),
+(16, 99, 29, 22, 8, 10, 13),
+(17, 96, 27, 18, 2, 2, 18),
+(18, 101, 32, 19, 4, 4, 17),
+(19, 98, 31, 23, 7, 3, 10),
+(20, 91, 30, 21, 5, 7, 19);
 
 INSERT INTO FPlayerStats (pl_name, pl_playerID, pl_position, pl_passyards, pl_rushyards, pl_receptions, pl_ointerceptions, pl_touchdowns, pl_receivingyards, pl_fumbles, pl_dinterceptions, pl_sacks, pl_tackles, pl_forcefumbles) VALUES
 
