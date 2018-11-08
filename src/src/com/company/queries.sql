@@ -265,7 +265,7 @@ INSERT INTO School (sc_schoolID, sc_city, sc_state, sc_mascot, sc_name) VALUES
 (7, SEATTLE, WA, TANNER, LINCOLN),
 (8, NEW YORK, NY, MITCH, PRESIDENTIAL),
 (9, MEMPHIS, TN, DOUG, RIVERSIDE),
-(10, INGLEWOOD, CA, SNOOP, INGLEWOOD TECH),
+(10, INGLEWOOD, CA, SNOOP, INGLEWOOD TECH);
 
 INSERT INTO Football (f_teamID, f_passyards, f_rushyards, f_tackles, f_receptions, f_sacks, f_ointerceptions, f_forcefumbles, f_touchdowns, f_receivingyards, f_fumbles, f_dinterceptions) VALUES
 
