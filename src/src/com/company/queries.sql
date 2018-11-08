@@ -265,6 +265,16 @@ INSERT INTO School (sc_schoolID, sc_city, sc_state, sc_mascot, sc_name) VALUES
 (10, INGLEWOOD, CA, SNOOP, INGLEWOOD TECH);
 
 INSERT INTO Football (f_teamID, f_passyards, f_rushyards, f_tackles, f_receptions, f_sacks, f_ointerceptions, f_forcefumbles, f_touchdowns, f_receivingyards, f_fumbles, f_dinterceptions) VALUES
+(1, 220, 100, 65, 20, 4, 2, 3, 4, 220, 1, 1),
+(2, 240, 120, 60, 30, 3, 2, 2, 3, 240, 2, 2),
+(3, 300, 80, 79, 24, 10, 1, 1, 5, 300, 2, 3),
+(4, 150, 150, 50, 25, 3, 3, 2, 2, 150, 1, 1),
+(5, 200, 80, 40, 23, 6, 1, 4, 3, 200, 3, 2),
+(6, 210, 120, 30, 31, 7, 2, 2, 1, 210, 2, 2),
+(7, 225, 60, 62, 21, 2, 1, 1, 1, 225, 1, 1),
+(8, 310, 150, 55, 41, 5, 4, 2, 4, 310, 4, 2),
+(9, 185, 80, 57, 31, 9, 1, 1, 2, 185, 1, 2),
+(10, 204, 200, 54, 20, 15, 1, 5, 3, 204, 1, 2);
 
 INSERT INTO Basketball (b_teamID, b_points, b_rebounds, b_assists, b_steals, b_blocks, b_turnovers) VALUES
 (11, 90, 30, 20, 5, 5, 15),
