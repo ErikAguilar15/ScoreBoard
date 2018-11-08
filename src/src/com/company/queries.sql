@@ -9,15 +9,14 @@ CREATE TABLE Basketball (
 );
 
 CREATE TABLE BPlayerStats (
-    bp_name      CHAR (50)     NOT NULL,
-    bp_playerID  VARCHAR (255) NOT NULL,
-    bp_position  CHAR (50)     NOT NULL,
-    bp_rebounds  INTEGER (5),
-    bp_assists   INTEGER (5),
-    bp_steals    INTEGER (5),
-    bp_blocks    INTEGER (5),
-    bp_turnovers INTEGER (5)
+    bp_playerID  VARCHAR (255) NOT NULL,
+    bp_rebounds  INTEGER (5),
+    bp_assists   INTEGER (5),
+    bp_steals    INTEGER (5),
+    bp_blocks    INTEGER (5),
+    bp_turnovers INTEGER (5)
 );
+
 
 CREATE TABLE Coach (
     c_name     CHAR (50)     NOT NULL,
@@ -45,20 +44,18 @@ CREATE TABLE Football (
 );
 
 CREATE TABLE FPlayerStats (
-    pl_name           CHAR (50)     NOT NULL,
-    pl_playerID       VARCHAR (255) NOT NULL,
-    pl_position       CHAR (10)     NOT NULL,
-    pl_passyards      INTEGER (5),
-    pl_rushyards      INTEGER (5),
-    pl_receptions     INTEGER (5),
-    pl_ointerceptions INTEGER (5),
-    pl_touchdowns     INTEGER (5),
-    pl_receivingyards INTEGER (5),
-    pl_fumbles        INTEGER (5),
-    pl_dinterceptions INTEGER (5),
-    pl_sacks          INTEGER (5),
-    pl_tackles        INTEGER (5),
-    pl_forcefumbles   INTEGER (5)
+    pl_playerID       VARCHAR (255) NOT NULL,
+    pl_passyards      INTEGER (5),
+    pl_rushyards      INTEGER (5),
+    pl_receptions     INTEGER (5),
+    pl_ointerceptions INTEGER (5),
+    pl_touchdowns     INTEGER (5),
+    pl_receivingyards INTEGER (5),
+    pl_fumbles        INTEGER (5),
+    pl_dinterceptions INTEGER (5),
+    pl_sacks          INTEGER (5),
+    pl_tackles        INTEGER (5),
+    pl_forcefumbles   INTEGER (5)
 );
 
 CREATE TABLE Player (
