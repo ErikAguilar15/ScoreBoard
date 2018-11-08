@@ -277,7 +277,7 @@ INSERT INTO Football (f_teamID, f_passyards, f_rushyards, f_tackles, f_reception
 (7, 225, 60, 62, 21, 2, 1, 1, 1, 225, 1, 1),
 (8, 310, 150, 55, 41, 5, 4, 2, 4, 310, 4, 2),
 (9, 185, 80, 57, 31, 9, 1, 1, 2, 185, 1, 2),
-(10, 204, 200, 54, 20, 15, 1, 5, 3, 204, 1, 2),
+(10, 204, 200, 54, 20, 15, 1, 5, 3, 204, 1, 2);
 
 INSERT INTO Basketball (b_teamID, b_points, b_rebounds, b_assists, b_steals, b_blocks, b_turnovers) VALUES
 (11, 90, 30, 20, 5, 5, 15),
