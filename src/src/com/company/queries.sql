@@ -1,4 +1,4 @@
-CREATE TABLE Basketball (
+CREATE TABLE IF NOT EXISTS Basketball (
     b_teamID    VARCHAR (255) NOT NULL,
     b_points    INTEGER (4),
     b_rebounds  INTEGER (4),
@@ -8,7 +8,7 @@ CREATE TABLE Basketball (
     b_turnovers INTEGER (4)   NOT NULL
 );
 
-CREATE TABLE BPlayerStats (
+CREATE TABLE IF NOT EXISTS BPlayerStats (
     bp_playerID  VARCHAR (255) NOT NULL,
     bp_rebounds  INTEGER (5),
     bp_assists   INTEGER (5),
@@ -18,7 +18,7 @@ CREATE TABLE BPlayerStats (
 );
 
 
-CREATE TABLE Coach (
+CREATE TABLE IF NOT EXISTS Coach (
     c_name     CHAR (50)     NOT NULL,
     c_coachID  VARCHAR (255) NOT NULL,
     c_teamID   VARCHAR (255) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE Coach (
     c_schoolID VARCHAR (255) NOT NULL
 );
 
-CREATE TABLE Football (
+CREATE TABLE IF NOT EXISTS Football (
     f_teamID         VARCHAR (255) NOT NULL,
     f_passyards      INTEGER (4),
     f_rushyards      INTEGER (4),
@@ -43,7 +43,7 @@ CREATE TABLE Football (
     f_dinterceptions INTEGER (4)
 );
 
-CREATE TABLE FPlayerStats (
+CREATE TABLE IF NOT EXISTS FPlayerStats (
     pl_playerID       VARCHAR (255) NOT NULL,
     pl_passyards      INTEGER (5),
     pl_rushyards      INTEGER (5),
@@ -58,7 +58,7 @@ CREATE TABLE FPlayerStats (
     pl_forcefumbles   INTEGER (5)
 );
 
-CREATE TABLE Player (
+CREATE TABLE IF NOT EXISTS Player (
     p_name      CHAR (50)      NOT NULL,
     p_playerID  VARCHAR (255)  NOT NULL,
     p_teamID    VARCHAR (255)  NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE Player (
     p_position  CHAR (5)       NOT NULL
 );
 
-CREATE TABLE Schedule (
+CREATE TABLE IF NOT EXISTS Schedule (
     s_teamID   VARCHAR (255) NOT NULL,
     s_sport    CHAR (50)     NOT NULL,
     s_schoolID VARCHAR (255) NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE Schedule (
     s_location CHAR (50)     NOT NULL
 );
 
-CREATE TABLE School (
+CREATE TABLE IF NOT EXISTS School (
     sc_schoolID VARCHAR (255) NOT NULL,
     sc_city     CHAR (50)     NOT NULL,
     sc_state    CHAR (50)     NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE School (
     sc_name     CHAR (50)     NOT NULL
 );
 
-CREATE TABLE Team (
+CREATE TABLE IF NOT EXISTS Team (
     t_name     CHAR (50)     NOT NULL,
     t_teamID   VARCHAR (255) NOT NULL,
     t_sport    CHAR (50)     NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE Team (
     t_schoolID VARCHAR (255) NOT NULL
 );
 
-CREATE TABLE TeamStats (
+CREATE TABLE IF NOT EXISTS TeamStats (
     st_teamID  VARCHAR (255) NOT NULL,
     st_sport   CHAR (50)     NOT NULL,
     st_matchup DATE          NOT NULL,
@@ -500,7 +500,7 @@ INSERT INTO TeamStats (st_hometeamID, st_awayteamID, st_sport, st_matchup, st_sc
 (4, 2, FOOTBALL, 2018-03-05, 11, 23),
 (7, 5, FOOTBALL, 2018-03-05, 33, 48),
 (9, 6, FOOTBALL, 2018-03-05, 19, 32),
-(10, 8, FOOTBALL, 2018-03-05, 16, 14),
+(10, 8, FOOTBALL, 2018-03-05, 16, 14);
 
 INSERT INTO School (sc_schoolID, sc_city, sc_state, sc_mascot, sc_name) VALUES
 (1, FAIRFIELD, CA, SALLY, RODRIGUEZ),
