@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+            <state relative-caret-position="412">
+              <caret line="70" column="50" lean-forward="true" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/queries.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8145">
-              <caret line="543" column="10" lean-forward="false" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+              <caret line="594" column="10" lean-forward="false" selection-start-line="594" selection-start-column="10" selection-end-line="594" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -184,12 +184,12 @@
       <updated>1541488528971</updated>
       <workItem from="1541488532809" duration="3336000" />
       <workItem from="1541660974305" duration="2389000" />
-      <workItem from="1541725908882" duration="2505000" />
+      <workItem from="1541725908882" duration="3063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8230000" />
+    <option name="totallyTimeSpent" value="8788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -305,15 +305,15 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/queries.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8145">
-          <caret line="543" column="10" lean-forward="false" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+          <caret line="594" column="10" lean-forward="false" selection-start-line="594" selection-start-column="10" selection-end-line="594" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+        <state relative-caret-position="412">
+          <caret line="70" column="50" lean-forward="true" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
