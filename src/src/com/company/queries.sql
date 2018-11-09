@@ -112,7 +112,7 @@ INSERT INTO Coach (c_name, c_coachID, c_teamID, c_sport, c_league, c_division, c
 ('MIKE TOMLINSON', 7, 7, 'FOOTBALL', 'MEL', 2, 7),
 ('JAMES WHITE', 8, 8, 'FOOTBALL', 'MEL', 2, 8),
 ('TOM HOTHEM', 9, 9, 'FOOTBALL', 'MEL', 2, 9),
-('JIM BROWN', 10, 10, 'FOOTBALL', 'MEL', 2, 10)
+('JIM BROWN', 10, 10, 'FOOTBALL', 'MEL', 2, 10),
 ('MIKE BROWN', 11, 11, 'BASKETBALL', 'VALLEY', 1, 1),
 ('GREG POPOVICH', 12, 12, 'BASKETBALL', 'VALLEY', 1, 2),
 ('STEVE KERR', 13, 13, 'BASKETBALL', 'VALLEY', 1, 3),
