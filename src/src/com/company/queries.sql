@@ -1,4 +1,4 @@
-PGCREATE TABLE Basketball (
+CREATE TABLE Basketball (
     b_teamID    VARCHAR (255) NOT NULL,
     b_points    INTEGER (4),
     b_rebounds  INTEGER (4),
