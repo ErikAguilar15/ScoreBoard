@@ -500,9 +500,7 @@ INSERT INTO TeamStats (st_hometeamID, st_awayteamID, st_sport, st_matchup, st_sc
 (4, 2, FOOTBALL, 2018-03-05, 11, 23),
 (7, 5, FOOTBALL, 2018-03-05, 33, 48),
 (9, 6, FOOTBALL, 2018-03-05, 19, 32),
-<<<<<<< HEAD
 (10, 8, FOOTBALL, 2018-03-05, 16, 14);
-=======
 (10, 8, FOOTBALL, 2018-03-05, 16, 14),
 (11, 12, BASKETBALL, 2018-01-01, 81, 99),
 (13, 15, BASKETBALL, 2018-01-01, 83, 81),
@@ -554,7 +552,6 @@ INSERT INTO TeamStats (st_hometeamID, st_awayteamID, st_sport, st_matchup, st_sc
 (17, 15, BASKETBALL, 2018-03-05, 103, 98),
 (19,16, BASKETBALL, 2018-03-05, 99, 112),
 (20, 18, BASKETBALL, 2018-03-05, 116, 114);
->>>>>>> a09f91d0b257ac04d01861d1b9ae0ae83ff508a3
 
 INSERT INTO School (sc_schoolID, sc_city, sc_state, sc_mascot, sc_name) VALUES
 (1, FAIRFIELD, CA, SALLY, RODRIGUEZ),
