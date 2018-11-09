@@ -553,16 +553,16 @@ INSERT INTO TeamStats (st_hometeamID, st_awayteamID, st_sport, st_matchup, st_sc
 (20, 18, 'BASKETBALL', 2018-03-05, 116, 114);
 
 INSERT INTO School (sc_schoolID, sc_city, sc_state, sc_mascot, sc_name) VALUES
-(1, FAIRFIELD, CA, SALLY, RODRIGUEZ),
-(2, FAIRFIELD, CA, JEFF, FAIRFIELD),
-(3, LOS ANGELES, CA, MIKE, ARLETA),
-(4, SAN DIEGO, CA, JIM, JEFFERSON),
-(5, RENO, NV, LILY, WASHINGTON),
-(6, PHOENIX, AZ, KANYE, LUMBAR),
-(7, SEATTLE, WA, TANNER, LINCOLN),
-(8, NEW YORK, NY, MITCH, PRESIDENTIAL),
-(9, MEMPHIS, TN, DOUG, RIVERSIDE),
-(10, INGLEWOOD, CA, SNOOP, INGLEWOOD TECH);
+(1, 'FAIRFIELD', 'CA', 'SALLY', 'RODRIGUEZ'),
+(2, 'FAIRFIELD', 'CA', 'JEFF', 'FAIRFIELD'),
+(3, 'LOS ANGELES', 'CA', 'MIKE', 'ARLETA'),
+(4, 'SAN DIEGO', 'CA', 'JIM', 'JEFFERSON'),
+(5, 'RENO', 'NV', 'LILY', 'WASHINGTON'),
+(6, 'PHOENIX', 'AZ', 'KANYE', 'LUMBAR'),
+(7, 'SEATTLE', 'WA', 'TANNER', 'LINCOLN'),
+(8, 'NEW YORK', 'NY', 'MITCH', 'PRESIDENTIAL'),
+(9, 'MEMPHIS', 'TN', 'DOUG', 'RIVERSIDE'),
+(10, 'INGLEWOOD', 'CA', 'SNOOP', 'INGLEWOOD TECH');
 
 INSERT INTO Football (f_teamID, f_passyards, f_rushyards, f_tackles, f_receptions, f_sacks, f_ointerceptions, f_forcefumbles, f_touchdowns, f_receivingyards, f_fumbles, f_dinterceptions) VALUES
 (1, 220, 100, 65, 20, 4, 2, 3, 4, 220, 1, 1),
