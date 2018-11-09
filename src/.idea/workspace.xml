@@ -12,23 +12,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="547">
+              <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
+                <marker date="1541729293124" expanded="true" signature="7267:8713" ph="INSERT INTO Coach... " />
+                <marker date="1541729293124" expanded="true" signature="8766:10043" ph="INSERT INTO Team... " />
+                <marker date="1541729293124" expanded="true" signature="10096:16229" ph="INSERT INTO Player... " />
+                <marker date="1541729293124" expanded="true" signature="16282:29011" ph="INSERT INTO Schedule... " />
+                <marker date="1541729293124" expanded="true" signature="29064:32172" ph="INSERT INTO TeamStats... " />
+                <marker date="1541729293124" expanded="true" signature="32225:32889" ph="INSERT INTO School... " />
+                <marker date="1541729293124" expanded="true" signature="32942:33813" ph="INSERT INTO Football... " />
+                <marker date="1541729293124" expanded="true" signature="33866:34475" ph="INSERT INTO Basketball... " />
+                <marker date="1541729293124" expanded="true" signature="34528:37930" ph="INSERT INTO FPlayerStats... " />
+                <marker date="1541729293124" expanded="true" signature="37983:40484" ph="INSERT INTO BPlayerStats... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="queries.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/queries.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3978">
-              <caret line="543" column="10" lean-forward="true" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+            <state relative-caret-position="8145">
+              <caret line="543" column="10" lean-forward="false" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -44,8 +55,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/queries.sql" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -76,8 +87,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -100,13 +112,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,12 +183,13 @@
       <option name="presentableId" value="Default" />
       <updated>1541488528971</updated>
       <workItem from="1541488532809" duration="3336000" />
-      <workItem from="1541660974305" duration="1248000" />
+      <workItem from="1541660974305" duration="2389000" />
+      <workItem from="1541725908882" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4584000" />
+    <option name="totallyTimeSpent" value="8230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -182,12 +197,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956523" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32956523" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -204,7 +220,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -222,10 +237,50 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
+            <marker date="1541729293124" expanded="true" signature="7267:8713" ph="INSERT INTO Coach... " />
+            <marker date="1541729293124" expanded="true" signature="8766:10043" ph="INSERT INTO Team... " />
+            <marker date="1541729293124" expanded="true" signature="10096:16229" ph="INSERT INTO Player... " />
+            <marker date="1541729293124" expanded="true" signature="16282:29011" ph="INSERT INTO Schedule... " />
+            <marker date="1541729293124" expanded="true" signature="29064:32172" ph="INSERT INTO TeamStats... " />
+            <marker date="1541729293124" expanded="true" signature="32225:32889" ph="INSERT INTO School... " />
+            <marker date="1541729293124" expanded="true" signature="32942:33813" ph="INSERT INTO Football... " />
+            <marker date="1541729293124" expanded="true" signature="33866:34475" ph="INSERT INTO Basketball... " />
+            <marker date="1541729293124" expanded="true" signature="34528:37930" ph="INSERT INTO FPlayerStats... " />
+            <marker date="1541729293124" expanded="true" signature="37983:40484" ph="INSERT INTO BPlayerStats... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/queries.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8145">
+          <caret line="543" column="10" lean-forward="true" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
+            <marker date="1541729293124" expanded="true" signature="7267:8713" ph="INSERT INTO Coach... " />
+            <marker date="1541729293124" expanded="true" signature="8766:10043" ph="INSERT INTO Team... " />
+            <marker date="1541729293124" expanded="true" signature="10096:16229" ph="INSERT INTO Player... " />
+            <marker date="1541729293124" expanded="true" signature="16282:29011" ph="INSERT INTO Schedule... " />
+            <marker date="1541729293124" expanded="true" signature="29064:32172" ph="INSERT INTO TeamStats... " />
+            <marker date="1541729293124" expanded="true" signature="32225:32889" ph="INSERT INTO School... " />
+            <marker date="1541729293124" expanded="true" signature="32942:33813" ph="INSERT INTO Football... " />
+            <marker date="1541729293124" expanded="true" signature="33866:34475" ph="INSERT INTO Basketball... " />
+            <marker date="1541729293124" expanded="true" signature="34528:37930" ph="INSERT INTO FPlayerStats... " />
+            <marker date="1541729293124" expanded="true" signature="37983:40484" ph="INSERT INTO BPlayerStats... " />
           </folding>
         </state>
       </provider>
@@ -247,23 +302,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/queries.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="543" column="10" lean-forward="true" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
+        <state relative-caret-position="8145">
+          <caret line="543" column="10" lean-forward="false" selection-start-line="543" selection-start-column="10" selection-end-line="543" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1541729293124" expanded="true" signature="1684:2125" ph="CREATE TABLE... IF" />
+            <marker date="1541729293124" expanded="true" signature="7267:8713" ph="INSERT INTO Coach... " />
+            <marker date="1541729293124" expanded="true" signature="8766:10043" ph="INSERT INTO Team... " />
+            <marker date="1541729293124" expanded="true" signature="10096:16229" ph="INSERT INTO Player... " />
+            <marker date="1541729293124" expanded="true" signature="16282:29011" ph="INSERT INTO Schedule... " />
+            <marker date="1541729293124" expanded="true" signature="29064:32172" ph="INSERT INTO TeamStats... " />
+            <marker date="1541729293124" expanded="true" signature="32225:32889" ph="INSERT INTO School... " />
+            <marker date="1541729293124" expanded="true" signature="32942:33813" ph="INSERT INTO Football... " />
+            <marker date="1541729293124" expanded="true" signature="33866:34475" ph="INSERT INTO Basketball... " />
+            <marker date="1541729293124" expanded="true" signature="34528:37930" ph="INSERT INTO FPlayerStats... " />
+            <marker date="1541729293124" expanded="true" signature="37983:40484" ph="INSERT INTO BPlayerStats... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>src</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
