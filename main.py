@@ -9,3 +9,4 @@ def createConnection(db_file):
 def main():
     conn = createConnection("src/statistics.db")
     cursor = conn.cursor
+    db.close()
