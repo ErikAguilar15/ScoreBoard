@@ -1,3 +1,3 @@
 #!/usr/bin/python
 
-import MySQLdb
+import mysql.connector
