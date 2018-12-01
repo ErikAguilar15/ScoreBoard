@@ -7,8 +7,8 @@ def createConnection(db_file):
     return sqlite3.connect(db_file);
 
 def main():
-    print "Establishing connection."
+    print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
-    print "Establishing cursor"
+    print ("Establishing cursor")
     cursor = conn.cursor
     db.close()
