@@ -11,4 +11,4 @@ def main():
     conn = createConnection("src/statistics.db")
     print "Establishing cursor"
     cursor = conn.cursor
-    
+    db.close()
