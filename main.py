@@ -1,3 +1,3 @@
 #!/usr/bin/python
 
-import mysql.connector
+import sqlite3
