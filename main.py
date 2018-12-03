@@ -10,20 +10,26 @@ def closeConnection(conn)
     conn.close()
 
 def executeQuery(conn, query)
-    cursor.execute(query)
-    conn.commit()
+    c = conn.cursor()
+    c.execute(query)
+    c.commit()
 
     rows = cursor.fetchall()
 
     for row in rows:
         print(row)
 
+def createTable(conn, sql)
+    try:
+        c = conn.cursor()
+        c.execute(create_table_sql)
+    except Error as e:
+        print(e)
+
 
 def main():
     print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
-    print ("Establishing cursor.")
-    cursor = conn.cursor
     closeConnection()
 
 main()
