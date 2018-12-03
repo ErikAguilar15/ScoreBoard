@@ -131,13 +131,28 @@ def displayPlayersOnTeam(conn, id):
         print(row)
 
 #creates table
-def createTable(conn, name, choice):
+def createTable(conn, choice):
     sql = choice
     try:
         c = conn.cursor()
         c.execute(create_table_sql)
     except Error as e:
         print(e)
+
+#view scores for a game
+def viewScores(conn, home, away):
+    c = conn.cursor()
+    sql = "SELECT st_matchup, st_score1, st_score2 FROM TeamStats WHERE st_hometeamID =\'"
+    sql += home
+    sql += "\' AND st_awayteamID = \'"
+    sql += away
+    sql += "\'"
+    c.execute(sql)
+
+    rows = c.fetchall()
+
+    for row in rows:
+        print(row)
 
 #input functions for various tables
 #def inputPlayer(conn):
@@ -158,7 +173,7 @@ def createTable(conn, name, choice):
 def main():
     print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
-    displayPlayersOnTeam(conn, "7")
+    viewScores(conn, "1", "2")
     closeConnection(conn)
 
 main()
