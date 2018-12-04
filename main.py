@@ -355,6 +355,25 @@ def inputTeamStats(conn, homeid, awayid, sport, matchup, score1, score2):
     sql += "\')"
     c.execute(sql)
 
+def input(conn, argument):
+    c = conn.cursor()
+
+    switcher = {
+            1: inputPlayer,
+            2: inputSchedule,
+            3: inputSchool,
+            4: inputTeam,
+            5: inputCoach,
+            6: inputBasketballTeamStats,
+            7: inputBasketbalPlayerStats,
+            8: inputFootballTeamStats,
+            9: inputFootballPlayerStats,
+            10: inputTeamStats
+            }
+
+    func = switcher.get(argument, "Invalid Option")
+    c.execute(func)
+
 def main():
     print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
