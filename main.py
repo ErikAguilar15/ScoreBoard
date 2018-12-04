@@ -22,9 +22,9 @@ def executeQuery(conn, query):
 #search queries!!!! ESKETIT
 def searchPlayerByName(conn, name):
     c = conn.cursor()
-    sql = "SELECT * FROM Player WHERE p_name LIKE \'"
+    sql = "SELECT * FROM Player WHERE p_name LIKE \'%"
     sql += name
-    sql += "\'"
+    sql += "%\'"
     c.execute(sql)
 
     rows = c.fetchall()
@@ -78,9 +78,9 @@ def searchCoachByID(conn, id):
 
 def searchTeamByName(conn, name):
     c = conn.cursor()
-    sql = "SELECT * FROM Team WHERE t_name LIKE \'"
+    sql = "SELECT * FROM Team WHERE t_name LIKE \'%"
     sql += name
-    sql += "\'"
+    sql += "%\'"
     c.execute(sql)
 
     rows = c.fetchall()
@@ -106,9 +106,9 @@ def searchTeamByID(conn, id):
 
 def searchSchoolByName(conn, name):
     c = conn.cursor()
-    sql = "SELECT * FROM School WHERE sc_name LIKE \'"
+    sql = "SELECT * FROM School WHERE sc_name LIKE \'%"
     sql += name
-    sql += "\'"
+    sql += "%\'"
     c.execute(sql)
 
     rows = c.fetchall()
