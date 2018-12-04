@@ -173,7 +173,7 @@ def viewScores(conn, home, away):
 def main():
     print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
-    viewScores(conn, "1", "2")
+    viewScores(conn, "15", "20")
     closeConnection(conn)
 
 main()
