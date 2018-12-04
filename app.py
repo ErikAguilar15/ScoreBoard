@@ -97,6 +97,10 @@ def stats():
 def basketballstats():
     return render_template('basketballstats.html')
 
+@app.route("/footballstats")
+def basketballstats():
+    return render_template('footballstats.html')
+
 @app.route("/basketballscores")
 def basketballscores():
     conn = createConnection("src/statistics.db")
@@ -105,7 +109,7 @@ def basketballscores():
     return render_template('scores.html', rows = rows)
 
 @app.route("/footballstats")
-def footballstats():
+def footballscores():
     conn = createConnection("src/statistics.db")
     conn.row_factory = sql.Row
     rows = viewFootballScores(conn)
