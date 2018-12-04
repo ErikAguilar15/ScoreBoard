@@ -70,9 +70,21 @@ def search():
 def searcht():
     return render_template('searchteam.html')
 
+@app.route("/search")
+def mainsearch():
+    return render_template('index.html')
+
 @app.route("/")
 def main():
-    return render_template('index.html')
+    return render_template('main.html')
+
+@app.route("/Home")
+def fanmain():
+    return render_template('fan.html')
+
+@app.route("/CoachHome")
+def coachmain():
+    return render_template('coach.html')
 
     #eturn "Scoreboard: Your high school basktball and football shit"
 
