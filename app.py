@@ -4,6 +4,10 @@ from main import *
 import sqlite3 as sql
 from sqlite3 import Error
 
+@app.route("/searchPlayer")
+def search():
+    return render_template('searchplayer.html')
+
 @app.route('/addrec',methods = ['POST', 'GET'])
 def addrec():
    if request.method == 'POST':
@@ -21,6 +25,10 @@ def addrec1():
       conn.row_factory = sql.Row
       rows = searchPlayerByName(conn, name)
       return render_template('result.html', rows = rows)
+
+@app.route("/searchCoach")
+def searchc():
+    return render_template('searchcoach.html')
 
 @app.route('/addrec2',methods = ['POST', 'GET'])
 def addrec2():
@@ -40,6 +48,10 @@ def addrec3():
       rows = searchCoachByName(conn, name)
       return render_template('result2.html', rows = rows)
 
+@app.route("/searchTeam")
+def searcht():
+    return render_template('searchteam.html')
+
 @app.route('/addrec4',methods = ['POST', 'GET'])
 def addrec4():
    if request.method == 'POST':
@@ -58,17 +70,6 @@ def addrec5():
       rows = searchTeamByName(conn, name)
       return render_template('result3.html', rows = rows)
 
-@app.route("/searchCoach")
-def searchc():
-    return render_template('searchcoach.html')
-
-@app.route("/searchPlayer")
-def search():
-    return render_template('searchplayer.html')
-
-@app.route("/searchTeam")
-def searcht():
-    return render_template('searchteam.html')
 
 @app.route("/search")
 def mainsearch():
@@ -85,6 +86,18 @@ def fanmain():
 @app.route("/CoachHome")
 def coachmain():
     return render_template('coach.html')
+
+@app.route("/stats")
+def stats():
+    return render_template('stats.html')
+
+@app.route("/basketballstats")
+def basketballstats():
+    return render_template('basketballstats.html')
+
+@app.route("/footballstats")
+def footballstats():
+    return render_template('footballstats.html')
 
     #eturn "Scoreboard: Your high school basktball and football shit"
 
