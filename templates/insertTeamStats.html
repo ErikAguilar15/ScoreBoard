@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scoreboard</title>
+</head>
+<body>
+  <h1>Input Game Outcomes</h1>
+<form action = "{{ url_for('addrec') }}" method = "POST">
+  Input Game Outcomes to Insert:<br>
+  <p>Home Team ID:</p>
+  <input type="text" hometeamID="hometeamID"><br>
+  <p>Away Team ID:</p>
+  <input type="text" awayteamid="awayteamid"><br>
+  <p>Sport:</p>
+  <input type="text" sport="sport"><br>
+  <p>Matchup Date:</p>
+  <input type="text" matchup="matchup"><br>
+  <p>Score:</p>
+  <input type="text" score1="score1"><br>
+  <p>Score:</p>
+  <input type="text" score2="score2"><br>
+  <input type = "submit" value = "submit" /><br>
+</form>
+<a href = "/">Go Back to Home Page</a>
+</body>
+</html>

@@ -4,13 +4,11 @@
     <title>Scoreboard</title>
 </head>
 <body>
-  <h1>Input Team Stats</h1>
+  <h1>Input Player Stats</h1>
 <form action = "{{ url_for('addrec') }}" method = "POST">
-  Input Team Stats to Insert:<br>
-  <p>Team ID:</p>
-  <input type="text" teamid="teamid"><br>
-  <p>Points:</p>
-  <input type="text" points="points"><br>
+  Input Player Stats to Insert:<br>
+  <p>Player ID:</p>
+  <input type="text" playerid="id"><br>
   <p>Rebounds:</p>
   <input type="text" rebounds="rebounds"><br>
   <p>Assists:</p>
@@ -21,6 +19,8 @@
   <input type="text" blocks="blocks"><br>
   <p>Turnovers:</p>
   <input type="text" turnovers="turnovers"><br>
+  <p>Points:</p>
+  <input type="text" points="points"><br>
   <input type = "submit" value = "submit" /><br>
 </form>
 <a href = "/">Go Back to Home Page</a>
