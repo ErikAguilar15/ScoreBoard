@@ -166,6 +166,26 @@ def viewScores(conn, home, away):
     for row in rows:
         print(row)
 
+def viewHoopScores(conn):
+    c = conn.cursor()
+    sql = "SELECT * FROM hoopgames ORDER BY date"
+    c.execute(sql)
+
+    rows = c.fetchall()
+
+    for row in rows:
+        print(row)
+
+def viewFootballScores(conn):
+    c = conn.cursor()
+    sql = "SELECT * FROM nflboi ORDER BY date"
+    c.execute(sql)
+
+    rows = c.fetchall()
+
+    for row in rows:
+        print(row)
+
 #input functions for various tables
 def inputPlayer(conn, name, id, teamid, sport, height, weight, position):
     c = conn.cursor()
