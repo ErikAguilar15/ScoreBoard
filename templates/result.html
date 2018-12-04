@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ID</td>
+            <td>TeamID</td>
+            <td>Sport></td>
+            <td>Height</td>
+            <td>Weight</td>
+            <td>Position</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["p_name"]}}</td>
+               <td>{{row["p_playerID"]}}</td>
+               <td>{{row["p_teamID"]}}</td>
+               <td>{{row["p_sport"]}}</td>
+               <td>{{row["p_height"]}}</td>
+               <td>{{row['p_weight']}}</td>
+               <td>{{row['p_position']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+
+   </body>
+</html>

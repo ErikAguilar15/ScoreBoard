@@ -32,6 +32,8 @@ def searchPlayerByName(conn, name):
     for row in rows:
         print(row)
 
+    return rows
+
 def searchPlayerByID(conn, id):
     c = conn.cursor()
     sql = "SELECT * FROM Player WHERE p_playerID = \'"
@@ -44,9 +46,11 @@ def searchPlayerByID(conn, id):
     for row in rows:
         print(row)
 
+    return rows
+
 def searchCoachByName(conn, name):
     c = conn.cursor()
-    sql = "SELECT * FROM Player WHERE c_name = \'"
+    sql = "SELECT * FROM Coach WHERE c_name = \'"
     sql += name
     sql += "\'"
     c.execute(sql)
@@ -56,9 +60,11 @@ def searchCoachByName(conn, name):
     for row in rows:
         print(row)
 
+    return rows
+
 def searchCoachByID(conn, id):
     c = conn.cursor()
-    sql = "SELECT * FROM Player WHERE c_coachID = \'"
+    sql = "SELECT * FROM Coach WHERE c_coachID = \'"
     sql += id
     sql += "\'"
     c.execute(sql)
@@ -67,6 +73,8 @@ def searchCoachByID(conn, id):
 
     for row in rows:
         print(row)
+
+    return rows
 
 def searchTeamByName(conn, name):
     c = conn.cursor()
@@ -80,6 +88,8 @@ def searchTeamByName(conn, name):
     for row in rows:
         print(row)
 
+    return rows
+
 def searchTeamByID(conn, id):
     c = conn.cursor()
     sql = "SELECT * FROM Team WHERE t_teamID = \'"
@@ -91,6 +101,8 @@ def searchTeamByID(conn, id):
 
     for row in rows:
         print(row)
+
+    return rows
 
 def searchSchoolByName(conn, name):
     c = conn.cursor()

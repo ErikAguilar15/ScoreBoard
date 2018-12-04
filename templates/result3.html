@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Sport></td>
+            <td>League</td>
+            <td>Division</td>
+            <td>SchoolID</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["t_name"]}}</td>
+               <td>{{row["t_teamID"]}}</td>
+               <td>{{row["t_sport"]}}</td>
+               <td>{{row["t_league"]}}</td>
+               <td>{{row['t_division']}}</td>
+               <td>{{row['t_schoolID']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+
+   </body>
+</html>
