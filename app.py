@@ -75,6 +75,10 @@ def addrec5():
 def mainsearch():
     return render_template('index.html')
 
+@app.route("/insertHome")
+def insertHome():
+    return render_template('inserts.html')
+
 @app.route("/")
 def main():
     return render_template('main.html')
