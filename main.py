@@ -50,9 +50,9 @@ def searchPlayerByID(conn, id):
 
 def searchCoachByName(conn, name):
     c = conn.cursor()
-    sql = "SELECT * FROM Coach WHERE c_name LIKE %\'"
+    sql = "SELECT * FROM Coach WHERE c_name LIKE \'%"
     sql += name
-    sql += "\'%"
+    sql += "%\'"
     c.execute(sql)
 
     rows = c.fetchall()
