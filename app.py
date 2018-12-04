@@ -108,7 +108,7 @@ def basketballscores():
     rows = viewHoopScores(conn)
     return render_template('scores.html', rows = rows)
 
-@app.route("/footballstats")
+@app.route("/footballscores")
 def footballscores():
     conn = createConnection("src/statistics.db")
     conn.row_factory = sql.Row
