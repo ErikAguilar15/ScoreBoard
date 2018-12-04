@@ -120,6 +120,41 @@ def insertHome():
 def insertPlayer():
     return render_template('insertPlayer.html')
 
+@app.route("/insertSchedule")
+def insertSchedule():
+    return render_template('insertSchedule.html')
+
+@app.route("/insertSchool")
+def insertSchool():
+    return render_template('insertSchool.html')
+
+@app.route("/insertTeam")
+def insertTeam():
+    return render_template('insertTeam.html')
+
+@app.route("/insertCoach")
+def insertCoach():
+    return render_template('insertCoach.html')
+
+@app.route("/insertBTeamStats")
+def insertBTeamStats():
+    return render_template('insertBTeamStats.html')
+
+@app.route("/insertBPlayerStats")
+def insertBPlayerStats():
+    return render_template('insertBPlayerStats.html')
+
+@app.route("/insertFTeamStats")
+def insertFTeamStats():
+    return render_template('insertFTeamStats.html')
+
+@app.route("/insertFPlayerStats")
+def insertFPlayerStats():
+    return render_template('insertFPlayerStats.html')
+
+@app.route("/insertTeamStats")
+def insertTeamStats():
+    return render_template('insertTeamStats.html')
     #eturn "Scoreboard: Your high school basktball and football shit"
 
 if __name__ == "__main__":
