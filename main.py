@@ -169,19 +169,19 @@ def viewScores(conn, home, away):
 #input functions for various tables
 def inputPlayer(conn, name, id, teamid, sport, height, weight, position):
     c = conn.cursor()
-    sql = "INSERT INTO Player VALUES (\'"
+    sql = "INSERT INTO Player (p_name, p_playerID, p_teamID, p_sport, p_height, p_weight, p_position) VALUES (\'"
     sql += name
-    sql += "\',"
+    sql += "\',\'"
     sql += id
-    sql += "\',"
+    sql += "\',\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += sport
-    sql += "\',"
+    sql += "\',\'"
     sql += height
-    sql += "\',"
+    sql += "\',\'"
     sql += weight
-    sql += "\',"
+    sql += "\',\'"
     sql += position
     sql += "\')"
     c.execute(sql)
@@ -190,15 +190,15 @@ def inputSchedule(conn, teamid, sport, schoolid, matchup, week, location):
     c = conn.cursor()
     sql = "INSERT INTO Schedule VALUES (\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += sport
-    sql += "\',"
+    sql += "\',\'"
     sql += schoolid
-    sql += "\',"
+    sql += "\',\'"
     sql += matchup
-    sql += "\',"
+    sql += "\',\'"
     sql += week
-    sql += "\',"
+    sql += "\',\'"
     sql += location
     sql += "\')"
     c.execute(sql)
@@ -207,29 +207,30 @@ def inputSchool(conn, schoolid, city, state, mascot, name):
     c = conn.cursor()
     sql = "INSERT INTO School VALUES (\'"
     sql += schoolid
-    sql += "\',"
+    sql += "\',\'"
     sql += city
-    sql += "\',"
+    sql += "\',\'"
     sql += state
-    sql += "\',"
+    sql += "\',\'"
     sql += mascot
-    sql += "\',"
+    sql += "\',\'"
     sql += name
+    sql += "\')"
     c.execute(sql)
 
 def inputTeam(conn, name, teamid, sport, league, division, schoolid):
     c = conn.cursor()
     sql = "INSERT INTO Team VALUES (\'"
     sql += name
-    sql += "\',"
+    sql += "\',\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += sport
-    sql += "\',"
+    sql += "\',\'"
     sql += league
-    sql += "\',"
+    sql += "\',\'"
     sql += division
-    sql += "\',"
+    sql += "\',\'"
     sql += schoolid
     sql += "\')"
     c.execute(sql)
@@ -238,17 +239,17 @@ def inputCoach(conn, name, coachid, teamid, sport, league, division, schoolid):
     c = conn.cursor()
     sql = "INSERT INTO Coach VALUES (\'"
     sql += name
-    sql += "\',"
+    sql += "\',\'"
     sql += coachid
-    sql += "\',"
+    sql += "\',\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += sport
-    sql += "\',"
+    sql += "\',\'"
     sql += league
-    sql += "\',"
+    sql += "\',\'"
     sql += division
-    sql += "\',"
+    sql += "\',\'"
     sql += schoolid
     sql += "\')"
     c.execute(sql)
@@ -257,36 +258,36 @@ def inputBasketballTeamStats(conn, teamid, points, rebounds, assists, steals, bl
     c = conn.cursor()
     sql = "INSERT INTO Basketball VALUES (\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += points
-    sql += "\',"
+    sql += "\',\'"
     sql += rebounds
-    sql += "\',"
+    sql += "\',\'"
     sql += assists
-    sql += "\',"
+    sql += "\',\'"
     sql += steals
-    sql += "\',"
+    sql += "\',\'"
     sql += blocks
-    sql += "\',"
+    sql += "\',\'"
     sql += turnovers
     sql += "\')"
     c.execute(sql)
 
-def inputBasketbalPlayerlStats(conn, playerid, rebounds, assists, steals, blocks, turnovers, points):
+def inputBasketbalPlayerStats(conn, playerid, rebounds, assists, steals, blocks, turnovers, points):
     c = conn.cursor()
     sql = "INSERT INTO BPlayerStats VALUES (\'"
     sql += playerid
-    sql += "\',"
+    sql += "\',\'"
     sql += rebounds
-    sql += "\',"
+    sql += "\',\'"
     sql += assists
-    sql += "\',"
+    sql += "\',\'"
     sql += steals
-    sql += "\',"
+    sql += "\',\'"
     sql += blocks
-    sql += "\',"
+    sql += "\',\'"
     sql += turnovers
-    sql += "\',"
+    sql += "\',\'"
     sql += points
     sql += "\')"
     c.execute(sql)
@@ -295,27 +296,27 @@ def inputFootballTeamStats(conn, teamid, passyards, rushyards, tackles, receptio
     c = conn.cursor()
     sql = "INSERT INTO Football VALUES (\'"
     sql += teamid
-    sql += "\',"
+    sql += "\',\'"
     sql += passyards
-    sql += "\',"
+    sql += "\',\'"
     sql += rushyards
-    sql += "\',"
+    sql += "\',\'"
     sql += tackles
-    sql += "\',"
+    sql += "\',\'"
     sql += receptions
-    sql += "\',"
+    sql += "\',\'"
     sql += sacks
-    sql += "\',"
+    sql += "\',\'"
     sql += ointerceptions
-    sql += "\',"
+    sql += "\',\'"
     sql += forcefumbles
-    sql += "\',"
+    sql += "\',\'"
     sql += touchdowns
-    sql += "\',"
+    sql += "\',\'"
     sql += recievingyards
-    sql += "\',"
+    sql += "\',\'"
     sql += fumbles
-    sql += "\',"
+    sql += "\',\'"
     sql += dinterceptions
     sql += "\')"
     c.execute(sql)
@@ -324,52 +325,82 @@ def inputFootballPlayerStats(conn, playerid, passyards, rushyards, receptions, o
     c = conn.cursor()
     sql = "INSERT INTO FPlayerStats VALUES (\'"
     sql += playerid
-    sql += "\',"
+    sql += "\',\'"
     sql += passyards
-    sql += "\',"
+    sql += "\',\'"
     sql += rushyards
-    sql += "\',"
+    sql += "\',\'"
     sql += receptions
-    sql += "\',"
+    sql += "\',\'"
     sql += ointerceptions
-    sql += "\',"
+    sql += "\',\'"
     sql += touchdowns
-    sql += "\',"
+    sql += "\',\'"
     sql += recievingyards
-    sql += "\',"
+    sql += "\',\'"
     sql += fumbles
-    sql += "\',"
+    sql += "\',\'"
     sql += dinterceptions
-    sql += "\',"
+    sql += "\',\'"
     sql += sacks
-    sql += "\',"
+    sql += "\',\'"
     sql += tackles
-    sql += "\',"
+    sql += "\',\'"
     sql += forcefumbles
     sql += "\')"
     c.execute(sql)
 
 def inputTeamStats(conn, homeid, awayid, sport, matchup, score1, score2):
     c = conn.cursor()
-    sql = "INSERT INTO FPlayerStats VALUES (\'"
+    sql = "INSERT INTO TeamStats VALUES (\'"
     sql += homeid
-    sql += "\',"
+    sql += "\',\'"
     sql += awayid
-    sql += "\',"
+    sql += "\',\'"
     sql += sport
-    sql += "\',"
+    sql += "\',\'"
     sql += matchup
-    sql += "\',"
+    sql += "\',\'"
     sql += score1
-    sql += "\',"
+    sql += "\',\'"
     sql += score2
     sql += "\')"
     c.execute(sql)
+
+def input(conn, argument):
+    c = conn.cursor()
+
+    switcher = {
+            1: inputPlayer,
+            2: inputSchedule,
+            3: inputSchool,
+            4: inputTeam,
+            5: inputCoach,
+            6: inputBasketballTeamStats,
+            7: inputBasketbalPlayerStats,
+            8: inputFootballTeamStats,
+            9: inputFootballPlayerStats,
+            10: inputTeamStats
+            }
+
+    func = switcher.get(argument, "Invalid Option")
+    c.execute(func)
 
 def main():
     print ("Establishing connection.")
     conn = createConnection("src/statistics.db")
     viewScores(conn, "15", "20")
+    #inputPlayer(conn, "RICO NUCUM", "101", "21", "BASKETBALL", "73", "200", "PG")
+    #inputSchedule(conn, "21", "BASKETBALL", "11", "2018-01-01", "1", "AWAY")
+    #inputSchool(conn, "11", "FAIRFIELD", "CA", "BLUEFACES", "BENJAMIN")
+    #inputTeam(conn, "SENDORS", "21", "BASKETBALL", "VALLEY", "2", "11")
+    #inputCoach(conn, "ALSENDOR NUCUM", "21", "21", "BASKETBALL", "VALLEY", "2", "11")
+    #inputBasketballTeamStats(conn, "21", "99", "32", "21", "5", "7", "8")
+    #inputBasketbalPlayerStats(conn, "101", "5", "2", "3", "4", "1", "21")
+    #inputFootballTeamStats(conn, "11", "400", "230", "27", "30", "2", "1", "4", "3", "350", "1", "1")
+    #inputFootballPlayerStats(conn, "51", "200", "100", "0", "2", "5", "0", "2", "0", "0", "0", "0")
+    #inputTeamStats(conn, "11", "12", "FOOTBALL", "2018-01-22", "21", "21")
+    conn.commit()
     closeConnection(conn)
 
 main()
