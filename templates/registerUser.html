@@ -18,14 +18,9 @@
       font-family: fantasy;
     }
     a:link {
-      background-color: black;
-      color: white;
-      padding: 13px 24px;
       font-size: 25px;
-      text-align: center;
+      color: #A91010;
       text-decoration: none;
-      display: inline-block;
-      margin: 12px;
     }
     a:hover{
       color: hotpink;
@@ -35,13 +30,14 @@
 </head>
 <body>
   <h1>Scoreboard</h1>
-<h3>High School Basketball and Football Statistics</h3>
-<p style="text-align:center;">
-  <a href = "/CoachHome">Coach Access</a></br>
-  <a href = "/registerUser">Register User</a></br>
-  <a href = "/Home">Enter Site</a></br>
-<img src = "https://c1.staticflickr.com/8/7025/6545183393_fcbf004d73_b.jpg" alt="Sunset High" width="800" height="300" align="middle">
-</img>
-</p>
+<form action = "{{ url_for('addrec') }}" method = "POST">
+  Enter Username and Password:<br>
+  <p>Username:</p>
+  <input type="text" username="username"><br>
+  <p>Password:</p>
+  <input type="text" password="password"><br>
+  <input type = "submit" value = "submit" /><br>
+</form>
+<a href = "/">Home Page</a>
 </body>
 </html>

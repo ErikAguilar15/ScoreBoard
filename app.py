@@ -115,6 +115,10 @@ def footballscores():
     rows = viewFootballScores(conn)
     return render_template('scores.html', rows = rows)
 
+@app.route("/registerUser")
+def registerUser():
+    return render_template('registerUser.html')
+
 #inserts
 @app.route("/insertHome")
 def insertHome():
