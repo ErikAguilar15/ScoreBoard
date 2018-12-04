@@ -71,6 +71,7 @@ def addrec5():
       return render_template('result3.html', rows = rows)
 
 
+#home pages
 @app.route("/search")
 def mainsearch():
     return render_template('index.html')
@@ -91,6 +92,7 @@ def fanmain():
 def coachmain():
     return render_template('coach.html')
 
+#Statistics
 @app.route("/stats")
 def stats():
     return render_template('stats.html')
