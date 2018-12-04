@@ -178,7 +178,7 @@ def viewHoopScores(conn):
 
 def viewFootballScores(conn):
     c = conn.cursor()
-    sql = "SELECT * FROM nflboi ORDER BY date"
+    sql = "SELECT * FROM footballgames ORDER BY date"
     c.execute(sql)
 
     rows = c.fetchall()
