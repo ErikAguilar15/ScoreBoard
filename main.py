@@ -176,6 +176,8 @@ def viewHoopScores(conn):
     for row in rows:
         print(row)
 
+    return rows
+
 def viewFootballScores(conn):
     c = conn.cursor()
     sql = "SELECT * FROM footballgames ORDER BY date"
@@ -185,6 +187,8 @@ def viewFootballScores(conn):
 
     for row in rows:
         print(row)
+
+    return rows
 
 #input functions for various tables
 def inputPlayer(conn, name, id, teamid, sport, height, weight, position):
