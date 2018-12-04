@@ -76,10 +76,6 @@ def addrec5():
 def mainsearch():
     return render_template('index.html')
 
-@app.route("/insertHome")
-def insertHome():
-    return render_template('inserts.html')
-
 @app.route("/")
 def main():
     return render_template('main.html')
@@ -104,6 +100,15 @@ def basketballstats():
 @app.route("/footballstats")
 def footballstats():
     return render_template('footballstats.html')
+
+#inserts
+@app.route("/insertHome")
+def insertHome():
+    return render_template('inserts.html')
+
+@app.route("/insertPlayer")
+def insertPlayer():
+    return render_template('insertPlayer.html')
 
     #eturn "Scoreboard: Your high school basktball and football shit"
 
