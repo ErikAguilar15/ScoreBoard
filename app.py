@@ -98,7 +98,7 @@ def basketballstats():
     return render_template('basketballstats.html')
 
 @app.route("/footballstats")
-def basketballstats():
+def footballstats():
     return render_template('footballstats.html')
 
 @app.route("/basketballscores")
