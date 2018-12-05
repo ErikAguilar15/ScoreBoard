@@ -122,6 +122,25 @@ def bballplayerstats():
     rows = viewHoopPlayerStats(conn)
     return render_template('bballplayerstats.html', rows = rows)
 
+@app.route("/bballplayerstatsbyteam",methods = ['POST', 'GET'])
+def bballplayerstatsbyteam():
+    if request.method == 'POST':
+        team = request.form['team']
+        conn = createConnection("src/statistics.db")
+        conn.row_factory = sql.Row
+        rows = viewHoopPlayerStatsByTeam(conn, team)
+        return render_template('bballplayerstats.html', rows = rows)
+
+@app.route("/bballplayerstatsbyposition",methods = ['POST', 'GET'])
+def bballplayerstatsbyposition():
+    if request.method == 'POST':
+        position = request.form['position']
+        conn = createConnection("src/statistics.db")
+        conn.row_factory = sql.Row
+        rows = viewHoopPlayerStatsByPosition(conn, position)
+        return render_template('bballplayerstats.html', rows = rows)
+
+
 @app.route("/fballplayerstats")
 def fballplayerstats():
     return render_template('fballplayerstats.html')

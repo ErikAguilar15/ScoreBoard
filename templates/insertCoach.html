@@ -29,23 +29,23 @@
     </style>
 </head>
 <body>
-  <h1>Input Coach</h1>
+  <h1>Scoreboard</h1>
 <form action = "{{ url_for('addrec') }}" method = "POST">
   Input Coach Information to Insert:<br>
   <p>Name:</p>
   <input type="text" name="name"><br>
   <p>Coach ID:</p>
-  <input type="text" coachid="coachid"><br>
+  <input type="text" name="coachid"><br>
   <p>Team ID:</p>
-  <input type="text" teamid="teamid"><br>
+  <input type="text" name="teamid"><br>
   <p>Sport:</p>
-  <input type="text" sport="sport"><br>
+  <input type="text" name="sport"><br>
   <p>League:</p>
-  <input type="text" league="league"><br>
+  <input type="text" name="league"><br>
   <p>Division:</p>
-  <input type="text" division="division"><br>
+  <input type="text" name="division"><br>
   <p>School ID:</p>
-  <input type="text" schoolid="schoolid"><br>
+  <input type="text" name="schoolid"><br>
   <input type = "submit" value = "submit" /><br>
 </form>
 <a href = "/">Home Page</a>
