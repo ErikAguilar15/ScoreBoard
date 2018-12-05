@@ -101,6 +101,20 @@ def basketballstats():
 def footballstats():
     return render_template('footballstats.html')
 
+@app.route("/basketballteamstats")
+def basketballteamstats():
+    conn = createConnection("src/statistics.db")
+    conn.row_factory = sql.Row
+    rows = viewTeamStats(conn, "BASKETBALL")
+    return render_template('basketballteamstats.html' rows = rows)
+
+@app.route("/footballteamstats")
+def footballteamstats():
+    conn = createConnection("src/statistics.db")
+    conn.row_factory = sql.Row
+    rows = viewTeamStats(conn, "FOOTBALL")
+    return render_template('footballteamstats.html' rows = rows)
+
 @app.route("/basketballscores")
 def basketballscores():
     conn = createConnection("src/statistics.db")
@@ -140,6 +154,7 @@ def fballplayerstatsdefense():
     rows = viewFBallDefenseStats(conn)
     return render_template('fballplayerstats-defense.html', rows = rows)
 
+#register/sign in
 @app.route("/registerUser")
 def registerUser():
     return render_template('registerUser.html')

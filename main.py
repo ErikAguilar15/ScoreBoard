@@ -170,6 +170,14 @@ def viewFBallDefenseStats(conn):
     c.execute(sql)
     return c.fetchall()
 
+def viewTeamStats(conn, sport):
+    c = conn.cursor()
+    sql = "SELECT * FROM Team WHERE t_sport = \'"
+    sql += sport
+    sql += ""\'"
+    c.execute(sql)
+    return c.fetchall()
+
 #view scores for a game
 def viewScores(conn, home, away):
     c = conn.cursor()
