@@ -174,7 +174,7 @@ def viewTeamStats(conn, sport):
     c = conn.cursor()
     sql = "SELECT * FROM Team WHERE t_sport = \'"
     sql += sport
-    sql += ""\'"
+    sql += "\'"
     c.execute(sql)
     return c.fetchall()
 
