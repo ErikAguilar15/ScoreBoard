@@ -154,6 +154,22 @@ def insertHome():
 def insertPlayer():
     return render_template('insertPlayer.html')
 
+@app.route('/insertPlayerRequest',methods = ['POST', 'GET'])
+def insertPlayerRequest():
+   if request.method == 'POST':
+      name = request.form['name']
+      id = request.form['id']
+      teamid = request.form['teamid']
+      sport = request.form['sport']
+      height = request.form['height']
+      weight = request.form['weight']
+      position = request.form['position']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      c.execute("INSERT INTO Player (p_name, p_playerID, p_teamID, p_sport, p_height, p_weight, p_position) VALUES (?,?,?,?,?,?,?)",(name, id, teamid, sport, height, weight, position))
+      conn.commit()
+      conn.close()
+
 @app.route("/insertSchedule")
 def insertSchedule():
     return render_template('insertSchedule.html')

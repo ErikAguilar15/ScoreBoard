@@ -30,22 +30,22 @@
 </head>
 <body>
   <h1>Input Player</h1>
-<form action = "{{ url_for('addrec') }}" method = "POST">
+<form action = "{{ url_for('insertPlayerRequest') }}" method = "POST">
   Input Player Information to Insert:<br>
   <p>Name:</p>
-  <input type="text" name="name"><br>
+  <input type="text" value="name"><br>
   <p>Player ID:</p>
-  <input type="text" playerid="id"><br>
+  <input type="text" value="id"><br>
   <p>Team ID:</p>
-  <input type="text" teamid="teamid"><br>
+  <input type="text" value="teamid"><br>
   <p>Sport:</p>
-  <input type="text" sport="sport"><br>
+  <input type="text" value="sport"><br>
   <p>Height:</p>
-  <input type="text" height="height"><br>
+  <input type="text" value="height"><br>
   <p>Weight:</p>
-  <input type="text" weight="weight"><br>
+  <input type="text" value="weight"><br>
   <p>Position:</p>
-  <input type="text" position="position"><br>
+  <input type="text" value="position"><br>
   <input type = "submit" value = "submit" /><br>
 </form>
 <a href = "/">Home Page</a>
