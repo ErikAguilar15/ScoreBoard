@@ -166,8 +166,9 @@ def insertPlayerRequest():
       position = request.form['position']
       conn = createConnection("src/statistics.db")
       c = conn.cursor()
-      c.execute("INSERT INTO Player (p_name, p_playerID, p_teamID, p_sport, p_height, p_weight, p_position) VALUES (?,?,?,?,?,?,?)",(name, id, teamid, sport, height, weight, position))
+      inputPlayer(conn, name, id, teamid, sport, height, weight, position)
       conn.commit()
+      return render_template('insertPlayer.html')
       conn.close()
 
 @app.route("/insertSchedule")
