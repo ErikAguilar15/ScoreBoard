@@ -140,6 +140,14 @@ def bballplayerstatsbyposition():
         rows = viewHoopPlayerStatsByPosition(conn, position)
         return render_template('bballplayerstats.html', rows = rows)
 
+@app.route("/bballplayerstatsbyscore",methods = ['POST', 'GET'])
+def bballplayerstatsbyscore():
+    if request.method == 'POST':
+        score = request.form['score']
+        conn = createConnection("src/statistics.db")
+        conn.row_factory = sql.Row
+        rows = viewHoopPlayerStatsScoresMore(conn, score)
+        return render_template('bballplayerstats.html', rows = rows)
 
 @app.route("/fballplayerstats")
 def fballplayerstats():

@@ -174,6 +174,13 @@ def viewHoopPlayerStatsByPosition(conn, pos):
     c.execute(sql)
     return c.fetchall()
 
+def viewHoopPlayerStatsScoresMore(conn, points):
+    c = conn.cursor()
+    sql = "SELECT * FROM hoopers WHERE bp_points > "
+    sql += points
+    c.execute(sql)
+    return c.fetchall()
+
 def viewFBallOffenseStats(conn):
     c = conn.cursor()
     sql = "SELECT * FROM footballoffense"
