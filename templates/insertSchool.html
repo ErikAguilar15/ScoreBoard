@@ -29,17 +29,17 @@
     </style>
 </head>
 <body>
-  <h1>Input School</h1>
+  <h1>Scoreboard</h1>
 <form action = "{{ url_for('addrec') }}" method = "POST">
   Input School Information to Insert:<br>
   <p>School ID:</p>
-  <input type="text" schoolid="schoolid"><br>
+  <input type="text" name="schoolid"><br>
   <p>City:</p>
-  <input type="text" city="city"><br>
+  <input type="text" name="city"><br>
   <p>State:</p>
-  <input type="text" state="state"><br>
+  <input type="text" name="state"><br>
   <p>Mascot:</p>
-  <input type="text" mascot="mascot"><br>
+  <input type="text" name="mascot"><br>
   <p>School Name:</p>
   <input type="text" name="name"><br>
   <input type = "submit" value = "submit" /><br>
