@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+   <body>
+     <head>
+     <style>
+
+     body {
+
+       background-color: #C4EFEA;
+     }
+
+     </style>
+     </head>
+
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>Pass Yards</td>
+            <td>Rush Yards</td>
+            <td>Interceptions</td>
+            <td>Touchdowns</td>
+            <td>Receiving Yards</td>
+            <td>Fumbles</td>
+            <td>Position</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["pass"]}}</td>
+               <td>{{row["rush"]}}</td>
+               <td>{{row["interception"]}}</td>
+               <td>{{row["touchdown"]}}</td>
+               <td>{{row["receiving"]}}</td>
+               <td>{{row["fumble"]}}</td>
+               <td>{{row["position"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Home Page</a>
+
+   </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+   <body>
+     <head>
+     <style>
+
+     body {
+
+       background-color: #C4EFEA;
+     }
+
+     </style>
+     </head>
+
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Rebounds</td>
+            <td>Assists</td>
+            <td>Steals</td>
+            <td>Blocks</td>
+            <td>Turnovers</td>
+            <td>Points</td>
+            <td>Position</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["bp_name"]}}</td>
+               <td>{{row["bp_playerID"]}}</td>
+               <td>{{row["bp_rebounds"]}}</td>
+               <td>{{row["bp_assists"]}}</td>
+               <td>{{row["bp_steals"]}}</td>
+               <td>{{row["bp_blocks"]}}</td>
+               <td>{{row["bp_turnovers"]}}</td>
+               <td>{{row["bp_points"]}}</td>
+               <td>{{row["bp_position"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Home Page</a>
+
+   </body>
+</html>

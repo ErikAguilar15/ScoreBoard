@@ -115,6 +115,31 @@ def footballscores():
     rows = viewFootballScores(conn)
     return render_template('scores.html', rows = rows)
 
+@app.route("/bballplayerstats")
+def bballplayerstats():
+    conn = createConnection("src/statistics.db")
+    conn.row_factory = sql.Row
+    rows = viewHoopPlayerStats(conn)
+    return render_template('bballplayerstats.html', rows = rows)
+
+@app.route("/fballplayerstats")
+def fballplayerstats():
+    return render_template('fballplayerstats.html')
+
+@app.route("/fballplayerstatsoffense")
+def fballplayerstatsoffense():
+    conn = createConnection("src/statistics.db")
+    conn.row_factory = sql.Row
+    rows = viewFBallOffenseStats(conn)
+    return render_template('fballplayerstats-offense.html', rows = rows)
+
+@app.route("/fballplayerstatsdefense")
+def fballplayerstatsdefense():
+    conn = createConnection("src/statistics.db")
+    conn.row_factory = sql.Row
+    rows = viewFBallDefenseStats(conn)
+    return render_template('fballplayerstats-defense.html', rows = rows)
+
 @app.route("/registerUser")
 def registerUser():
     return render_template('registerUser.html')

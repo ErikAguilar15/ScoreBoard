@@ -151,6 +151,25 @@ def createTable(conn, choice):
     except Error as e:
         print(e)
 
+#view Stats
+def viewHoopPlayerStats(conn):
+    c = conn.cursor()
+    sql = "SELECT * FROM hoopers"
+    c.execute(sql)
+    return c.fetchall()
+
+def viewFBallOffenseStats(conn):
+    c = conn.cursor()
+    sql = "SELECT * FROM footballoffense"
+    c.execute(sql)
+    return c.fetchall()
+
+def viewFBallDefenseStats(conn):
+    c = conn.cursor()
+    sql = "SELECT * FROM footballdefense"
+    c.execute(sql)
+    return c.fetchall()
+
 #view scores for a game
 def viewScores(conn, home, away):
     c = conn.cursor()
