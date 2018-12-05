@@ -31,6 +31,17 @@
 <body>
   <h1>Scoreboard</h1>
 <h3>High School Basketball and Football Statistics</h3>
+<p>Advanced Search</p>
+<form action = "{{ url_for('bballplayerstatsbyteam') }}" method = "POST">
+  <p>Search Players By Team</p>
+  <input type="text" name="team"><br>
+  <input type = "submit" value = "submit" /><br>
+</form>
+<form action = "{{ url_for('bballplayerstatsbyposition') }}" method = "POST">
+  <p>Search Players By Position</p>
+  <input type="text" name="position"><br>
+  <input type = "submit" value = "submit" /><br>
+</form>
 <a href = "/bballplayerstats">Player Statistics</a></br>
 <a href = "/basketballscores">Scores</a></br>
 <a href = "/">Home Page</a>

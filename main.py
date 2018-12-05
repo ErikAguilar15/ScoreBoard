@@ -158,6 +158,22 @@ def viewHoopPlayerStats(conn):
     c.execute(sql)
     return c.fetchall()
 
+def viewHoopPlayerStatsByTeam(conn, team):
+    c = conn.cursor()
+    sql = "SELECT * FROM hoopers WHERE team = \'"
+    sql += team
+    sql += "\'"
+    c.execute(sql)
+    return c.fetchall()
+
+def viewHoopPlayerStatsByPosition(conn, pos):
+    c = conn.cursor()
+    sql = "SELECT * FROM hoopers WHERE bp_position = \'"
+    sql += pos
+    sql += "\'"
+    c.execute(sql)
+    return c.fetchall()
+
 def viewFBallOffenseStats(conn):
     c = conn.cursor()
     sql = "SELECT * FROM footballoffense"
