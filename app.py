@@ -190,6 +190,163 @@ def insertPlayerRequest():
       return render_template('insertPlayer.html')
       conn.close()
 
+@app.route('/insertBPlayerStatsRequest',methods = ['POST', 'GET'])
+def insertBPlayerStatsRequest():
+   if request.method == 'POST':
+      id = request.form['id']
+      rebounds = request.form['rebounds']
+      assists = request.form['assists']
+      steals = request.form['steals']
+      blocks = request.form['blocks']
+      turnovers = request.form['turnovers']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputBPlayerStats(id, rebounds, assists, steals, blocks, turnovers)
+      conn.commit()
+      return render_template('insertBPlayerStats.html')
+      conn.close()
+
+@app.route('/insertBTeamStatsRequest',methods = ['POST', 'GET'])
+def insertBTeamStatsRequest():
+   if request.method == 'POST':
+      teamid = request.form['teamid']
+      points = request.form['points']
+      rebounds = request.form['rebounds']
+      assists = request.form['assists']
+      steals = request.form['steals']
+      blocks = request.form['blocks']
+      turnovers = request.form['turnovers']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputBasketballTeamStats(teamid, points, rebounds, assists, steals, blocks, turnovers)
+      conn.commit()
+      return render_template('insertBTeamStats.html')
+      conn.close()
+
+@app.route('/insertCoachRequest',methods = ['POST', 'GET'])
+def insertCoachRequest():
+   if request.method == 'POST':
+      name = request.form['name']
+      id = request.form['id']
+      teamid = request.form['teamid']
+      sport = request.form['sport']
+      league = request.form['league']
+      division = request.form['division']
+      schoolid = request.form['schoolid']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputCoach(conn, name, id, teamid, sport, height, weight, position)
+      conn.commit()
+      return render_template('insertCoach.html')
+      conn.close()
+
+@app.route('/insertFPlayerStatsRequest',methods = ['POST', 'GET'])
+def insertFPlayerStatsRequest():
+   if request.method == 'POST':
+      id = request.form['id']
+      passyards = request.form['passyards']
+      rushyards = request.form['rushyards']
+      receptions = request.form['receptions']
+      ointerceptions = request.form['ointerceptions']
+      touchdowns = request.form['touchdowns']
+      recievingyards = request.form['recievingyards']
+      fumbles = request.form['fumbles']
+      dinterceptions = request.form['dinterceptions']
+      sacks = request.form['sacks']
+      tackles = request.form['tackles']
+      forcefumbles = request.form['forcefumbles']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputFootballPlayerStats(id, passyards, rushyards, receptions, ointerceptions, touchdowns, recievingyards, fumbles, dinterceptions, sacks, tackles, forcefumbles)
+      conn.commit()
+      return render_template('insertFPlayerStats.html')
+      conn.close()
+
+@app.route('/insertFTeamStatsRequest',methods = ['POST', 'GET'])
+def insertFTeamStatsRequest():
+   if request.method == 'POST':
+      id = request.form['id']
+      passyards = request.form['passyards']
+      rushyards = request.form['rushyards']
+      tackles = request.form['tackles']
+      receptions = request.form['receptions']
+      sacks = request.form['sacks']
+      ointerceptions = request.form['ointerceptions']
+      forcefumbles = request.form['forcefumbles']
+      touchdowns = request.form['touchdowns']
+      recievingyards = request.form['recievingyards']
+      fumbles = request.form['fumbles']
+      dinterceptions = request.form['dinterceptions']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputFootballTeamStats(id, passyards, rushyards, tackles, receptions, sacks, ointerceptions, forcefumbles, touchdowns, recievingyards, fumbles, dinterceptions)
+      conn.commit()
+      return render_template('insertFTeamStats.html')
+      conn.close()
+
+@app.route('/insertScheduleRequest',methods = ['POST', 'GET'])
+def insertScheduleRequest():
+   if request.method == 'POST':
+      id = request.form['id']
+      sport = request.form['sport']
+      schoolid = request.form['schoolid']
+      matchup = request.form['matchup']
+      week = request.form['week']
+      location = request.form['location']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputSchedule(id, sport, schoolid, matchup, week, location)
+      conn.commit()
+      return render_template('insertSchedule.html')
+      conn.close()
+
+@app.route('/insertSchoolRequest',methods = ['POST', 'GET'])
+def insertSchoolRequest():
+   if request.method == 'POST':
+      schoolid = request.form['schoolid']
+      city = request.form['city']
+      state = request.form['state']
+      mascot = request.form['mascot']
+      name = request.form['name']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputSchool(schoolid, city, state, mascot, name)
+      conn.commit()
+      return render_template('insertSchool.html')
+      conn.close()
+
+@app.route('/insertTeamRequest',methods = ['POST', 'GET'])
+def insertTeamRequest():
+   if request.method == 'POST':
+      name = request.form['name']
+      teamid = request.form['teamid']
+      sport = request.form['sport']
+      league = request.form['league']
+      division = request.form['division']
+      schoolid = request.form['schoolid']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputTeam(name, teamid, sport, league, division, schoolid)
+      conn.commit()
+      return render_template('insertTeam.html')
+      conn.close()
+
+@app.route('/insertTeamStatsRequest',methods = ['POST', 'GET'])
+def insertTeamStatsRequest():
+   if request.method == 'POST':
+      hometeamid = request.form['hometeamid']
+      awayteamid = request.form['awayteamid']
+      sport = request.form['sport']
+      matchup = request.form['matchup']
+      score1 = request.form['score1']
+      score2 = request.form['score2']
+      conn = createConnection("src/statistics.db")
+      c = conn.cursor()
+      inputTeamStats(hometeamid, awayteamid, sport, matchup, score1, score2)
+      conn.commit()
+      return render_template('insertTeamStats.html')
+      conn.close()
+
 @app.route("/insertSchedule")
 def insertSchedule():
     return render_template('insertSchedule.html')
