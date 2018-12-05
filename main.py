@@ -160,9 +160,9 @@ def viewHoopPlayerStats(conn):
 
 def viewHoopPlayerStatsByTeam(conn, team):
     c = conn.cursor()
-    sql = "SELECT * FROM hoopers WHERE team = \'"
+    sql = "SELECT * FROM hoopers WHERE team LIKE \'%"
     sql += team
-    sql += "\'"
+    sql += "%\'"
     c.execute(sql)
     return c.fetchall()
 
